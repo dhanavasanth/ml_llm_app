@@ -1,0 +1,127 @@
+{
+  "model_type": "Pipeline(StandardScaler, LinearRegression)",
+  "dataset": "sklearn.datasets.load_diabetes(scaled=False)",
+  "target": "Quantitative measure of diabetes progression one year after baseline",
+  "trained_on_samples": 442,
+  "threshold": 140.0,
+  "bands": [
+    {
+      "name": "Low risk",
+      "max": 100.0,
+      "diabetic": false
+    },
+    {
+      "name": "Borderline",
+      "max": 140.0,
+      "diabetic": false
+    },
+    {
+      "name": "High risk",
+      "max": null,
+      "diabetic": true
+    }
+  ],
+  "target_min": 25.0,
+  "target_max": 346.0,
+  "target_mean": 152.13348416289594,
+  "metrics": {
+    "model": "LinearRegression",
+    "r2": 0.4526,
+    "mae": 42.7941,
+    "rmse": 53.8534,
+    "cv_r2": 0.4823
+  },
+  "classification_accuracy": 0.764,
+  "features": [
+    {
+      "name": "age",
+      "label": "Age (years)",
+      "min": 19.0,
+      "max": 79.0,
+      "mean": 48.52,
+      "step": 0.1,
+      "coefficient": 1.7538
+    },
+    {
+      "name": "sex",
+      "label": "Sex (1 = male, 2 = female)",
+      "min": 1.0,
+      "max": 2.0,
+      "mean": 1.47,
+      "step": 1.0,
+      "coefficient": -11.5118
+    },
+    {
+      "name": "bmi",
+      "label": "Body mass index",
+      "min": 18.0,
+      "max": 42.2,
+      "mean": 26.38,
+      "step": 0.1,
+      "coefficient": 25.6071
+    },
+    {
+      "name": "bp",
+      "label": "Average blood pressure (mm Hg)",
+      "min": 62.0,
+      "max": 133.0,
+      "mean": 94.65,
+      "step": 0.1,
+      "coefficient": 16.8289
+    },
+    {
+      "name": "s1",
+      "label": "S1 \u2014 Total serum cholesterol (tc)",
+      "min": 97.0,
+      "max": 301.0,
+      "mean": 189.14,
+      "step": 0.1,
+      "coefficient": -44.4489
+    },
+    {
+      "name": "s2",
+      "label": "S2 \u2014 Low-density lipoproteins (ldl)",
+      "min": 41.6,
+      "max": 242.4,
+      "mean": 115.44,
+      "step": 0.1,
+      "coefficient": 24.641
+    },
+    {
+      "name": "s3",
+      "label": "S3 \u2014 High-density lipoproteins (hdl)",
+      "min": 22.0,
+      "max": 99.0,
+      "mean": 49.79,
+      "step": 0.1,
+      "coefficient": 7.677
+    },
+    {
+      "name": "s4",
+      "label": "S4 \u2014 Total cholesterol / HDL ratio (tch)",
+      "min": 2.0,
+      "max": 9.09,
+      "mean": 4.07,
+      "step": 0.1,
+      "coefficient": 13.1388
+    },
+    {
+      "name": "s5",
+      "label": "S5 \u2014 Log of serum triglycerides (ltg)",
+      "min": 3.2581,
+      "max": 6.107,
+      "mean": 4.64,
+      "step": 0.1,
+      "coefficient": 35.1612
+    },
+    {
+      "name": "s6",
+      "label": "S6 \u2014 Blood sugar level (glu)",
+      "min": 58.0,
+      "max": 124.0,
+      "mean": 91.26,
+      "step": 0.1,
+      "coefficient": 2.3514
+    }
+  ]
+}
